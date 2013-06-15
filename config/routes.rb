@@ -1,7 +1,7 @@
 Pages::Application.routes.draw do
   resources :pages
 
- root :to => 'pages#index'
+   root :to => 'pages#index'
 
   get 'pages/about'
   match 'about' => 'pages#about'
