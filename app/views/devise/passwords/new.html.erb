@@ -1,0 +1,27 @@
+<style>
+body{
+	padding-left: 15em; 
+
+</style>
+<body>
+	<h2>Forgot your password?</h2>
+
+<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div><%= f.label :email %><br />
+  <%= f.email_field :email, :autofocus => true %></div>
+
+  <div><%= f.submit "Send me reset password instructions" %></div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+</body>
+<!-- HTML Codes by Quackit.com -->
+<style type="text/css">
+body {background-color:ff9900;background-image:url(http://2.bp.blogspot.com/_oJpV6yalpOk/TTLQyBRqRfI/AAAAAAAACh8/DVAL8wSWdHw/s1600/The-best-top-desktop-hd-dark-black-wallpapers-dark-black-wallpaper-dark-background-dark-wallpaper-17.jpg);background-repeat:no-repeat;background-position:top left;background-attachment:scroll;}
+table, tr, td {background:transparent; border:0px;}table table {border:0px;}table table table table {border:0px;}table table table {background-color:CCFFFF;border-width:2;border-style:double;border-color:6600CC;}
+td, span, div, input, a, table td div div font, body div table tbody tr td font {font-family:Cursive;font-size:14pt;color:000000;}
+a {color:0099FF;}
+</style>
+<br />

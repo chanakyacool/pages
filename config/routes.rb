@@ -1,4 +1,6 @@
 Pages::Application.routes.draw do
+  devise_for :pages
+
   resources :pages
 
    root :to => 'pages#index'

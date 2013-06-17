@@ -1,0 +1,25 @@
+<h2>Sign in</h2>
+
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+  <div><%= f.label :email %><br />
+  <%= f.email_field :email, :autofocus => true %></div>
+
+  <div><%= f.label :password %><br />
+  <%= f.password_field :password %></div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+  <% end -%>
+
+  <div><%= f.submit "Sign in" %></div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+<!-- HTML Codes by Quackit.com -->
+<style type="text/css">
+body {background-color:ff9900;background-image:url(http://img534.imageshack.us/img534/1135/vladstudiotreeofbooks19.jpg);background-repeat:no-repeat;background-position:top left;background-attachment:scroll;}
+table, tr, td {background:transparent; border:0px;}table table {border:0px;}table table table table {border:0px;}table table table {background-color:CCFFFF;border-width:2;border-style:double;border-color:6600CC;}
+td, span, div, input, a, table td div div font, body div table tbody tr td font {font-family:Cursive;font-size:14pt;color:000000;}
+a {color:0099FF;}
+</style>
+<br />
